@@ -1,9 +1,9 @@
-import Server from "./classes/server";
+import Server from './classes/server';
 import router from './routes/router';
 import cors from 'cors';
 var bodyParser = require('body-parser')
 
-const server = new Server();
+const server = Server.instance;
 
 //BodyParser
 server.app.use(bodyParser.urlencoded({ extended: true }))
